@@ -1,0 +1,101 @@
+第19題、
+def 換算西元年(a):
+    print("西元年為:",a+1911)
+a = int(input("請輸入民國年分:"))
+換算西元年(a)
+
+第20題、
+def 計算矩形面積(a):
+    print(a*b)
+a = float(input("請輸入長度:"))
+b = float(input("請輸入寬度:"))
+計算矩形面積(a)
+
+第21題、
+def 換算時間(a):
+    print(a*60+b,"分")
+a = int(input("請輸入?小時:"))
+b = int(input("請輸入?分:"))
+換算時間(a)
+
+第22題、
+def 換算時間(a):
+    print(c,"小時",b,"分")
+a = int(input("請輸入?分:"))
+b = (a%60)
+c = int((a-(a%60))/60)
+換算時間(a)
+
+第23題、
+def 換算溫度(a):
+    print("華氏溫度為:",a*1.8+32,"度")
+a = float(input("請輸入攝氏溫度:"))
+換算溫度(a)
+
+第24題
+def 判斷質數(num):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                print(num,'不是質數')
+                break
+        else:
+            print(num, '是質數')
+    else:
+        print("輸入錯誤")
+
+num = int(input('請輸入任意整數來判斷是否質數: '))
+判斷質數(num)
+
+第25題
+def 輸出因數(a):
+    if a > 0:
+        for i in range(1,a+1):
+            if (a%i)==0:
+                print(i)
+    else:
+        print("輸入錯誤")
+a = int(input("請輸入一正整數:"))
+輸出因數(a)
+
+第26題
+def 找最大公因數(num1):
+    if num1 and num2 > 0:
+        for i in range(1,num2+1):
+            if (num1%i)==0 and (num2%i)==0:
+                List1.append(i)                
+        print("最大公因數為:",List1[-1])
+    elif num1 <= num2:
+        print("請重新輸入")
+    else:
+        print("請重新輸入")
+       
+num1 = int(input("請輸入一正整數:"))
+num2 = int(input("請輸入較大的正整數:"))
+List1 = []
+a = 0
+找最大公因數(num1)
+
+(我還在想最小公倍數)
+
+第27題
+import random
+x = random.randrange(1,11)
+a = int(input("請猜一個正整數:"))
+List = []
+while a != x :
+    print("請再輸入一次")
+    List.append(1)
+    a = int(input("請猜一個正整數:"))
+else:
+    print("恭喜猜對")
+    print("總共輸入",len(List),"次")
+    print(x)
+
+第28題
+import random
+y = int(input("請輸入一個正整數:"))
+z = int(input("請輸入另一個正整數:"))
+x = random.randrange(y,z)
+List = []
+print(x)
