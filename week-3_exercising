@@ -12,3 +12,34 @@ for i in range(1,1001):
 print(f"{sum(List)}")
 
 第14題
+def right_triangle(n):
+    for i in range(n+1):
+        print(i*"*")
+n = int(input("請輸入行數:"))
+right_triangle(n)
+
+第15題
+def draw_triangle(rows):
+    for i in range(1, rows + 1):
+        for j in range(i):
+            print(i, end="")
+        print()
+
+rows = int(input("請輸入行數:"))
+draw_triangle(rows)
+
+第16題
+def triangle_drawing(rows):
+    for i in range(1, rows + 1):
+        spaces = rows - i
+        numbers = (2 * i) - 1
+        print(" " * spaces + str(i) * numbers)
+rows = int(input("請輸入行數:"))
+triangle_drawing(rows)
+
+第17題
+for i in range(1,10):
+    for j in range(1,10):
+        result = i*j
+        print(f"{i}*{j}={result}",end=" ")
+    print()
