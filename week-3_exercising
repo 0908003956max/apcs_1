@@ -1,0 +1,14 @@
+第11題
+result = 1
+for i in range(1,201):
+    result *= i
+print(result)
+
+第13題
+List = []
+for i in range(1,1001):
+    if (i%2) != 0:
+        List.append(i)
+print(f"{sum(List)}")
+
+第14題
