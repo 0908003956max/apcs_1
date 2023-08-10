@@ -49,3 +49,88 @@ print(f"最高分數為{List[-1]}分")
 print(f"平均分數為{sum(List)/x}分")
 
 第33題
+List = []
+for i in range(10):
+    score = int(input(f"請輸入第{i+1}位學生的成績:"))
+    List.append(score)
+List.sort(reverse = True)
+print(List)
+
+第34題
+size = 5
+matrix = [[0] * size for _ in range(size)]
+
+for i in range(size):
+    matrix[i][i] = 1
+
+for row in matrix:
+    for item in row:
+        print(item, end=' ')
+    print()  
+
+第35題
+matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+for i in range(3):
+    for j in range(3):
+        matrix[i][j] = int(input(f"請輸入第 {i+1} 列，第 {j+1} 行的元素值: "))
+        
+sum = matrix[0][0] + matrix[1][1] + matrix[2][2]
+
+print(f"3x3矩陣對角線元素之和為:{sum}")
+
+第36題
+matrix = [[0, 0, 0], [0, 0, 0]]
+
+for i in range(2):
+    for j in range(3):
+        matrix[i][j] = int(input(f"請輸入第 {i+1} 列，第 {j+1} 行的元素值: "))
+
+transposed_matrix = [[0, 0], [0, 0], [0, 0]]
+
+for i in range(2):
+    for j in range(3):
+        transposed_matrix[j][i] = matrix[i][j]
+
+print("轉置後的矩陣:")
+for row in transposed_matrix:
+    print(row)
+
+第37題
+
+第38題
+List = []
+for i in range(10):
+    students_score = int(input(f"請輸入第{i+1}位學生的成績:"))
+    List.append(students_score)
+
+List.sort(reverse = True)
+print(List)
+
+第39題
+count_lower = 0
+count_upper = 0
+count_others = 0
+x = str(input("請輸入一行字元:"))
+for char in x:
+    if char.upper():
+        count_upper+=1
+    elif char.lower():
+        count_lower+=1
+    else:
+        count_others+=1
+print(f"大寫英文字元個數：{count_upper}")
+print(f"小寫英文字元個數：{count_lower}")
+print(f"其他字元個數：{count_others}")
+
+第44題
+List = []
+for i in range(30):
+    student_score = int(input(f"第{i+1}項成績:"))
+    List.append(student_score)
+List.sort()
+print(f"最低分為{List[0]}分")
+print(f"最高分為{List[-1]}分")
+print(f"平均分數為{sum(List)/30}分")
+
+
