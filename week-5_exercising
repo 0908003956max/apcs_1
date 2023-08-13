@@ -123,6 +123,52 @@ print(f"大寫英文字元個數：{count_upper}")
 print(f"小寫英文字元個數：{count_lower}")
 print(f"其他字元個數：{count_others}")
 
+第40題
+def swap_numbers(a, b):
+    a, b = b, a
+    return a, b
+
+num1 = int(input("請輸入第一個整數："))
+num2 = int(input("請輸入第二個整數："))
+
+num1, num2 = swap_numbers(num1, num2)
+
+print("交換後的第一個整數為：", num1)
+print("交換後的第二個整數為：", num2)
+
+第41題
+a = str(input("請輸入一串文字:"))
+b = str(input("請輸入另一串文字:"))
+List1 = []
+List1.append(a+b)
+print(List1)
+
+第42題
+def sum_of_number(num):
+    total = 0
+    while num > 0:
+        digit = num % 10
+        total += digit
+        num //= 10
+    return total
+num = int(input("請輸入一個數字："))
+result = sum_of_number(num)
+print("數字的位數和為：", result)
+
+第43題
+def reverse_number(num):
+    reversed_num = 0
+    while num > 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num //= 10
+    return reversed_num
+
+num = int(input("請輸入一個數字："))
+
+reversed_num = reverse_number(num)
+print("數字倒轉後為：", reversed_num)
+
 第44題
 List = []
 for i in range(30):
